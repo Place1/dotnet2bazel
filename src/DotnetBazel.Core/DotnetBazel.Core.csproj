@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <NugetVersion>5.10.0</NugetVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NuGet.Commands" Version="$(NugetVersion)" />
+    <PackageReference Include="NuGet.Common" Version="$(NugetVersion)" />
+    <PackageReference Include="NuGet.Configuration" Version="$(NugetVersion)" />
+    <PackageReference Include="NuGet.DependencyResolver.Core" Version="$(NugetVersion)" />
+    <PackageReference Include="NuGet.Frameworks" Version="$(NugetVersion)" />
+    <PackageReference Include="NuGet.PackageManagement" Version="$(NugetVersion)" />
+    <PackageReference Include="NuGet.Packaging.Core" Version="$(NugetVersion)" />
+    <PackageReference Include="NuGet.Packaging" Version="$(NugetVersion)" />
+    <PackageReference Include="NuGet.ProjectModel" Version="$(NugetVersion)" />
+    <PackageReference Include="NuGet.Protocol" Version="$(NugetVersion)" />
+    <PackageReference Include="NuGet.Resolver" Version="$(NugetVersion)" />
+    <PackageReference Include="NuGet.Versioning" Version="$(NugetVersion)" />
+  </ItemGroup>
+
+</Project>
+
