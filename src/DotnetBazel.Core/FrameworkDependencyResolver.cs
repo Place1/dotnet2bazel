@@ -150,10 +150,6 @@ namespace NugetDotnet.Core
               .Prepend(new FrameworkReference("Microsoft.NETCore.App"))
               .ToArray();
 
-            var x = localPackages
-                .Where(pkg => pkg.LocalPackageSourceInfo.Package.Nuspec.GetFrameworkRefGroups().SelectMany(r => r.FrameworkReferences.Select(f => f.Name)).Contains("Microsoft.WindowsDesktop.App.WindowsForms"))
-                .First();
-
             return frameworkRefs
                 .Where(r => _frameworkReferenceTargetPackMap.ContainsKey(r.Name))
                 .Select(r => _frameworkReferenceTargetPackMap[r.Name]);
